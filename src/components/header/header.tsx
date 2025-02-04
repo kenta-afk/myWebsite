@@ -8,13 +8,10 @@ export const Header = component$(() => {
           <nav>
             <ul class="nav-lists">
               <li>
-                <a href="#about">Profile</a>
+                <a href="#about">about</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
+                <a href="#works">works</a>
               </li>
             </ul>
           </nav>

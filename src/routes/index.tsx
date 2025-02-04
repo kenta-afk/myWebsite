@@ -6,7 +6,7 @@ export default component$(() => {
     <>
       <header>
         <div class="header-container">
-            <div class="nav-contaner">
+            <div class="nav-container">
               <nav>
                 <ul class="nav-lists">
                   <li><a href="#about">Profile</a></li>

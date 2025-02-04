@@ -79,6 +79,7 @@ header p {
     padding: 10px;
     margin: 100px;
     justify-content: flex-end;
+    border-bottom: solid white;
 }
 
 .social-links {
@@ -108,7 +109,31 @@ header p {
     fill: #666;
 }
 
+@media (max-width: 767px) {
+    .header-container {
+        margin-top: 0;
+    }
 
+    .nav-lists {
+        margin: 20px auto;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+    }
 
+    header a {
+        color: #fff;
+        font-size: 1em;
+        text-decoration: none;
+    }
 
-@media (min-width: 768px) {}
+    .nav-lists {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+        justify-content: flex-end;
+    }
+}

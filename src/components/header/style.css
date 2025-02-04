@@ -1,0 +1,122 @@
+.header-container {
+    margin-top: -500px;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 40vw;
+    padding: 30vw 0 5vw;
+    position: relative;
+    -webkit-transform-style: inherit;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background: url(/assets/sunset-1373171_1920.jpg) center/cover no-repeat;
+    -webkit-transform-origin: center center 0;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+header * {
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+}
+
+header a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header p {
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.nav-lists {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    padding: 10px;
+    margin: 100px;
+    justify-content: flex-end;
+    border-bottom: solid white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.2s;
+
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: #333;
+}
+
+.social-icon:hover {
+    fill: #666;
+}
+
+@media (max-width: 767px) {
+    .header-container {
+        margin-top: 0;
+    }
+
+    .nav-lists {
+        margin: 20px auto;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    header a {
+        color: #fff;
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .nav-lists {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        list-style: none;
+        padding: 10px;
+        margin: 10px;
+        justify-content: flex-end;
+    }
+}

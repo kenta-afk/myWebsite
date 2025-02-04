@@ -1,18 +1,17 @@
 html {
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
-

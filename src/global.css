@@ -16,6 +16,9 @@ body {
     overflow-x: hidden;
 }
 
+.header-container {
+    margin-top: -500px;
+}
 header {
     box-sizing: border-box;
     min-height: 40vw;
@@ -25,6 +28,8 @@ header {
     transform-style: inherit;
     width: 100vw;
 }
+
+
 
 header,
 header:before {
@@ -39,8 +44,7 @@ header::before {
     right: 0;
     top: 0;
     display: block;
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-        url(http://ksk-soft.com/css_labo/dimg/orengeFlower.jpg) center/cover no-repeat;
+    background: url(/assets/sunset-1373171_1920.jpg) center/cover no-repeat;
     -webkit-transform-origin: center center 0;
     -webkit-transform: translateZ(-1px) scale(2);
     transform-origin: center center 0;
@@ -57,29 +61,37 @@ header * {
     padding: 1em 0;
 }
 
+header a {
+    color: #fff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
 header p {
     background-color: hsla(0, 0%, 100%, 0.1);
 }
 
-.container {
-    margin-top: 10px;
+.nav-lists {
     display: flex;
-    height: auto;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    padding: 10px;
+    margin: 100px;
+    justify-content: flex-end;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 10px;
+    margin-top: 1rem;
 }
 
 .social-link {
     display: inline-block;
     transition: transform 0.2s;
+    
 }
 
 .social-link:hover {

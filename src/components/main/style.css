@@ -1,8 +1,18 @@
 main {
-    background-color: hsl(60, 10%, 10%);
-    line-height: 1.7;
-    max-width: 32em;
-    padding: 5% calc(50% - 16em) 35%;
-    position: relative;
-    z-index: 2;
+  background-color: hsl(60, 10%, 10%);
+  line-height: 1.7;
+  max-width: 32em;
+  padding: 5% calc(50% - 16em) 35%;
+  position: relative;
+  z-index: 2;
+}
+
+.c-carousel__main-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.c_card_text {
+  font-size: 24px;
+  text-align: left;
 }

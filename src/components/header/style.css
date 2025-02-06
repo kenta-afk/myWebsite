@@ -117,8 +117,7 @@ header p {
   }
 
     .social-links {
-      bottom: 220px;
-      left: 90px;
+      bottom: -40px;
       transform: translate(-50%, 0);
 
     }

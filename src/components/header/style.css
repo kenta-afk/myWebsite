@@ -115,4 +115,11 @@ header p {
     margin: 10px;
     border-bottom: solid white;
   }
+
+    .social-links {
+      bottom: 220px;
+      left: 90px;
+      transform: translate(-50%, 0);
+
+    }
 }

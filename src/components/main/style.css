@@ -7,11 +7,6 @@ main {
   z-index: 2;
 }
 
-.c-carousel__main-item {
-  flex-shrink: 0;
-  width: 100%;
-}
-
 .c_card_text {
   font-size: 24px;
   text-align: left;

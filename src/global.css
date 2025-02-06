@@ -14,4 +14,5 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  background-color: hsl(60, 10%, 10%);
 }

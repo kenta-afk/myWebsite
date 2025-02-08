@@ -24,7 +24,7 @@ export const head: DocumentHead = {
     {
       name: "keywords",
       content:
-        "kenta-afk, kenta, afk, portfolio, web, developer, web developer, software, engineer, software engineer",
+        "kenta-afk, kenta, portfolio, web, developer",
     },
   ],
 };

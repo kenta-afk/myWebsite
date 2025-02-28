@@ -2,7 +2,7 @@ main {
   background-color: hsl(60, 10%, 10%);
   line-height: 1.7;
   max-width: 32em;
-  padding: 5% calc(50% - 16em) 35%;
+  padding: 5% calc(50% - 16em);
   position: relative;
   z-index: 2;
 }
@@ -27,23 +27,3 @@ main {
   text-align: left;
 }
 
-a.textlink02 {
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-}
-
-a.textlink02::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #ceb849;
-  transition: width 0.3s;
-}
-
-a.textlink02:hover::after {
-  width: 100%;
-}

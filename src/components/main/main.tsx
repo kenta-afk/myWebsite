@@ -1,13 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { Works } from "../work/works";
 
-
-
-
 export const Main = component$(() => {
-
-  
-
   return (
     <main>
       <h1 id="about" class="title">
@@ -23,9 +17,6 @@ export const Main = component$(() => {
         Infrastructure : Docker, AWS, Cloudflare <br />
       </p>
       <Works />
-      
-      
-      
     </main>
   );
 });

@@ -16,7 +16,7 @@ export const Works = component$(() => {
       </h1>
       <div class="works-container">
         {repos.value.repos.filter((repo: any) => works.includes(repo.name)).map((repo: any) => (
-          <Work name={ repo.name} />
+          <Work key={ repo.name } name={ repo.name} />
         ))}
       </div>
     </main>

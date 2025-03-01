@@ -7,21 +7,19 @@ import "../components/main/style.css";
 import "../components/header/style.css";
 import "../components/work/style.css";
 
-export const useGithubAPI = routeLoader$((async () => {
+export const useGithubAPI = routeLoader$(async () => {
   try {
-    const response = await fetch("https://ungh.cc/users/kenta-afk/repos")
+    const response = await fetch("https://ungh.cc/users/kenta-afk/repos");
 
     if (!response.ok) {
       throw new Error("Failed to fetch");
     }
 
     return await response.json();
-  
   } catch (error) {
-    console.error(error)
+    console.error(error);
   }
-  
-})) 
+});
 
 export default component$(() => {
   return (
@@ -41,8 +39,7 @@ export const head: DocumentHead = {
     },
     {
       name: "keywords",
-      content:
-        "kenta-afk, kenta, portfolio, web, developer",
+      content: "kenta-afk, kenta, portfolio, web, developer",
     },
   ],
 };

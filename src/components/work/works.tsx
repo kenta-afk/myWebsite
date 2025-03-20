@@ -7,9 +7,9 @@ export const Works = component$(() => {
 
   const works = [
     "discord-bot-with-hono",
-    "Umbrella",
     "baseball-app",
     "phase4-Product",
+    "binary-mahjong",
   ];
 
   return (
@@ -23,8 +23,16 @@ export const Works = component$(() => {
           .map((repo: any) => (
             <Work key={repo.name} name={repo.name} />
           ))}
+
+        {works
+          .filter(
+            (name) =>
+              !repos.value.repos.some((repo: any) => repo.name === name),
+          )
+          .map((name) => (
+            <Work key={name} name={name} />
+          ))}
       </div>
     </main>
   );
 });
-

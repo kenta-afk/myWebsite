@@ -10,6 +10,7 @@ export const Works = component$(() => {
     "baseball-app",
     "phase4-Product",
     "binary-mahjong",
+    "setsuna"
   ];
 
   return (

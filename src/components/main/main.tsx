@@ -10,10 +10,10 @@ export const Main = component$(() => {
       <p class="c_card_text">
         Name : Kenta-afk <br />
         Location : Japan Fukuoka <br />
-        Language : Python, Typescript, Go <br />
-        Frontend : Vue, qwik <br />
-        Backend : FastAPI, Laravel, Gin, Graphql <br />
-        Database : MySQL <br />
+        Language : Python, Typescript, rust, Go <br />
+        Frontend : qwik, react <br />
+        Backend : FastAPI, Laravel, grpc, Graphql <br />
+        Database : MySQL, PostgreSQL<br />
         Infrastructure : Docker, AWS, Cloudflare <br />
       </p>
       <Works />

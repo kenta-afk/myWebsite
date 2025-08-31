@@ -9,7 +9,7 @@ export const SkillsSection = component$(() => {
     <section id="skills" class="section-bg py-32">
       <Container>
         <Card variant="glass" class="p-16">
-          <h2 class="text-5xl font-light text-white mb-16 text-center tracking-wide">Skills & Technologies</h2>
+          <h2 class="text-5xl font-light text-white mb-16 text-center tracking-wide">Skills</h2>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {skillCategories.map((category) => (
               <SkillCategoryCard key={category.title} category={category} />

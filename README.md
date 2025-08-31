@@ -1,32 +1,62 @@
-# Qwik City App ⚡️
+# Kenta-afk Portfolio Website ⚡️
 
-- [Qwik Docs](https://qwik.dev/)
-- [Discord](https://qwik.dev/chat)
-- [Qwik GitHub](https://github.com/QwikDev/qwik)
-- [@QwikDev](https://twitter.com/QwikDev)
-- [Vite](https://vitejs.dev/)
-
----
+A modern portfolio website built with Qwik, showcasing projects and skills with a clean, responsive design.
 
 ## Project Structure
 
-This project is using Qwik with [QwikCity](https://qwik.dev/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
-
-Inside your project, you'll see the following directory structure:
+This project follows a modern, maintainable folder structure:
 
 ```
-├── public/
-│   └── ...
-└── src/
-    ├── components/
-    │   └── ...
-    └── routes/
-        └── ...
+src/
+├── components/
+│   ├── ui/              # Reusable UI components
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   └── container.tsx
+│   ├── work/            # GitHub works components
+│   │   ├── work.tsx
+│   │   ├── works.tsx
+│   │   └── style.css
+│   ├── project-card.tsx
+│   └── skill-category-card.tsx
+├── sections/            # Page sections
+│   ├── hero-section.tsx
+│   ├── about-section.tsx
+│   ├── projects-section.tsx
+│   ├── works-section.tsx
+│   ├── skills-section.tsx
+│   └── contact-section.tsx
+├── hooks/               # Custom hooks
+│   └── use-page-effects.ts
+├── types/               # Type definitions
+│   ├── project.ts
+│   └── skill.ts
+├── utils/               # Utility functions and data
+│   ├── animation.ts
+│   ├── navigation.ts
+│   ├── projects-data.ts
+│   ├── skills-data.ts
+│   └── social-links.ts
+└── routes/
+    └── index.tsx        # Main page (simplified)
 ```
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/qwikcity/routing/overview/) for more info.
+## Features
 
-- `src/components`: Recommended directory for components.
+- **Modular Architecture**: Each section is a separate component for better maintainability
+- **Reusable Components**: Common UI elements are abstracted into reusable components
+- **Type Safety**: Full TypeScript support with proper type definitions
+- **Responsive Design**: Works seamlessly across all device sizes
+- **Modern Animations**: Smooth scroll effects and hover animations
+- **GitHub Integration**: Dynamically displays GitHub repositories
+
+## Key Improvements
+
+1. **Separation of Concerns**: Business logic separated from UI components
+2. **Better Organization**: Related files grouped together in logical folders
+3. **Reusability**: Common patterns extracted into reusable components
+4. **Maintainability**: Easier to add new features or modify existing ones
+5. **Scalability**: Structure supports future growth and feature additions
 
 - `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 

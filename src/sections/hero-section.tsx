@@ -16,7 +16,7 @@ export const HeroSection = component$(() => {
             />
           </div>
           <h1 class="text-6xl md:text-7xl font-extralight text-gray-100 mb-8 tracking-wide leading-none">
-            Kenta<span class="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-slate-400">-afk</span>
+            Kenta<span style="background: linear-gradient(90deg, #9ca3af, #94a3b8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">-afk</span>
           </h1>
           <p class="text-3xl text-gray-300 mb-10 font-light tracking-wide">Software Engineer</p>
           <Button 

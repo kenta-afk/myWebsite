@@ -13,10 +13,10 @@ export const AboutSection = component$(() => {
             <div>
               <p class="text-slate-300 leading-relaxed text-xl mb-8 font-light">
                 福岡の専門学校でAIについて学んでいる学生です。
-                ソフトウェア開発では、バックエンド領域が専門で現在はドメイン駆動設計のスペシャリストを目指しています。
+                ソフトウェア開発では、バックエンド領域が専門で設計のスペシャリストを目指しています。
               </p>
               <p class="text-slate-300 leading-relaxed text-xl font-light">
-                保守性の高いコードについて興味があり、変更容易性が高いシステムの設計を学んでいます。
+                機能性と変更容易性について興味があり、システムの設計を学んでいます。
               </p>
             </div>
             <div class="space-y-6">

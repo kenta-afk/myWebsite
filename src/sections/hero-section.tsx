@@ -2,7 +2,6 @@ import { component$ } from "@builder.io/qwik";
 import { Card } from "~/components/ui/card";
 import { Button } from "~/components/ui/button";
 import { smoothScrollTo } from "~/utils/navigation";
-import kentaAvatarUrl from "~/assets/kenta-afk.webp";
 
 export const HeroSection = component$(() => {
   return (
@@ -11,7 +10,7 @@ export const HeroSection = component$(() => {
         <Card variant="dark-glass" class="p-16 max-w-5xl mx-auto">
           <div class="w-48 h-48 bg-gradient-to-br from-gray-400 via-slate-300 to-gray-500 rounded-full mx-auto mb-12 flex items-center justify-center backdrop-filter backdrop-blur-sm border border-white border-opacity-10 shadow-2xl overflow-hidden">
             <img 
-              src={kentaAvatarUrl} 
+              src="/assets/kenta-afk.webp" 
               alt="Profile Avatar" 
               class="w-40 h-40 rounded-full object-cover"
             />

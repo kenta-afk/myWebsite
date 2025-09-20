@@ -8,12 +8,11 @@ on:
 
 jobs:
   auto-format:
-    name: Auto Format and Create PR
+    name: Auto Format and Commit
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -43,26 +42,11 @@ jobs:
         if: steps.format-check.outputs.formatting_needed == 'true'
         run: npm run fmt
 
-      - name: Create Pull Request
+      - name: Commit and push changes
         if: steps.format-check.outputs.formatting_needed == 'true'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "chore: auto-format code with Prettier"
-          title: "🤖 Auto-format code"
-          body: |
-            ## 自動フォーマット修正
-
-            このPRは、コードフォーマットの問題を自動で修正します。
-
-            ### 変更内容
-            - Prettierによるコードフォーマット修正
-
-            ### 確認事項
-            - [ ] フォーマット修正が適切であることを確認
-            - [ ] 機能に影響がないことを確認
-
-            🤖 このPRは自動生成されました。
-          branch: auto-format/prettier-fixes
-          delete-branch: true
-          base: main
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "chore: auto-format code with Prettier"
+          git push

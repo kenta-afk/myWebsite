@@ -33,5 +33,16 @@ export const featuredProjects: Project[] = [
     category: "Cloud Architecture Game",
     url: "https://topaz.dev/projects/ff454ddba004e991b867",
     githubUrl: "https://github.com/object-t/front-progate-aws-hackathon"
+  },
+  {
+    id: "virtual-marathon",
+    title: "擬似マラソン",
+    description: "スマートフォンと、vrゴーグルを使用して腕を振って画面が切り替わるマラソンを再現",
+    technologies: ["Rust, React", "Grpc", "AWS", "Kotlin", "Docker"],
+    gradient: "from-purple-600 to-pink-800",
+    icon: "🏃‍♂️",
+    category: "VR Game",
+    url: "https://topaz.dev/projects/2dfc326b6e2a50b733d9",
+    githubUrl: "https://github.com/kenta-afk/ikutio-backend"
   }
 ];

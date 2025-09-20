@@ -13,17 +13,17 @@ A modern portfolio website built with Qwik, showcasing projects and skills with 
 
 ## Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm start` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
-| `npm run lint:fix` | Fix ESLint errors |
-| `npm run fmt` | Format code with Prettier |
+| Command              | Description                  |
+| -------------------- | ---------------------------- |
+| `npm start`          | Start development server     |
+| `npm run build`      | Build for production         |
+| `npm run preview`    | Preview production build     |
+| `npm run lint`       | Run ESLint                   |
+| `npm run lint:fix`   | Fix ESLint errors            |
+| `npm run fmt`        | Format code with Prettier    |
 | `npm run type-check` | Run TypeScript type checking |
-| `npm run validate` | Run lint and type-check |
-| `npm run deploy` | Deploy to Cloudflare Pages |
+| `npm run validate`   | Run lint and type-check      |
+| `npm run deploy`     | Deploy to Cloudflare Pages   |
 
 ## Project Structure
 
@@ -92,6 +92,7 @@ npm run qwik add
 ```
 
 Available integrations include:
+
 - Cloudflare Pages
 - Netlify
 - Express Server
@@ -100,17 +101,20 @@ Available integrations include:
 ## Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/your-username/myWebsite.git
    cd myWebsite
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm start
    ```
@@ -129,9 +133,11 @@ Available integrations include:
 This project is optimized for Cloudflare Pages deployment:
 
 1. **Local preview with Wrangler**
+
    ```bash
    npm run serve
    ```
+
    Then visit [http://localhost:8787/](http://localhost:8787/)
 
 2. **Deploy to Cloudflare Pages**

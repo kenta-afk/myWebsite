@@ -32,13 +32,8 @@ jobs:
       - name: Run type check
         run: npm run type-check
 
-      - name: Build project
-        run: npm run build
-
-      - name: Setup Cloudflare Pages structure
-        run: |
-          mkdir -p dist/server
-          cp server/entry.cloudflare-pages.js dist/server/
+      - name: Build project for Cloudflare Pages
+        run: npm run build:cf
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

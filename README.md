@@ -2,7 +2,7 @@
 
 A modern portfolio website built with Qwik, showcasing projects and skills with a clean, responsive design.
 
-## Tech Stack
+## Stack
 
 - **Framework**: [Qwik](https://qwik.dev/) - Resumable and lightning fast
 - **Language**: TypeScript for type safety

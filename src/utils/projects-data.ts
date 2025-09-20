@@ -38,7 +38,7 @@ export const featuredProjects: Project[] = [
     id: "virtual-marathon",
     title: "擬似マラソン",
     description: "スマートフォンと、vrゴーグルを使用して腕を振って画面が切り替わるマラソンを再現",
-    technologies: ["Rust, React", "Grpc", "AWS", "Kotlin", "Docker"],
+    technologies: ["Rust", "React", "Grpc", "AWS", "Kotlin", "Docker", "Go"],
     gradient: "from-purple-600 to-pink-800",
     icon: "🏃‍♂️",
     category: "VR Game",

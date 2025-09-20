@@ -2,6 +2,29 @@
 
 A modern portfolio website built with Qwik, showcasing projects and skills with a clean, responsive design.
 
+## Tech Stack
+
+- **Framework**: [Qwik](https://qwik.dev/) - Resumable and lightning fast
+- **Language**: TypeScript for type safety
+- **Styling**: Sass/SCSS for enhanced CSS capabilities
+- **Deployment**: Cloudflare Pages
+- **CI/CD**: GitHub Actions for automated testing and deployment
+- **Code Quality**: ESLint, Prettier, Husky for git hooks
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Fix ESLint errors |
+| `npm run fmt` | Format code with Prettier |
+| `npm run type-check` | Run TypeScript type checking |
+| `npm run validate` | Run lint and type-check |
+| `npm run deploy` | Deploy to Cloudflare Pages |
+
 ## Project Structure
 
 This project follows a modern, maintainable folder structure:
@@ -60,57 +83,69 @@ src/
 
 - `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 
-## Add Integrations and deployment
+## Adding Integrations
 
-Use the `npm run qwik add` command to add additional integrations. Some examples of integrations includes: Cloudflare, Netlify or Express Server, and the [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/).
+Use the `npm run qwik add` command to add additional integrations:
 
-```shell
-npm run qwik add # or `yarn qwik add`
+```bash
+npm run qwik add
 ```
 
-## Development
+Available integrations include:
+- Cloudflare Pages
+- Netlify
+- Express Server
+- [Static Site Generator (SSG)](https://qwik.dev/qwikcity/guides/static-site-generation/)
 
-Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
+## Getting Started
 
-```shell
-npm start # or `yarn start`
-```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/myWebsite.git
+   cd myWebsite
+   ```
 
-> Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-## Preview
+3. **Start development server**
+   ```bash
+   npm start
+   ```
 
-The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-```shell
-npm run preview # or `yarn preview`
-```
+> Note: During development, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
 
-## Production
+## Deployment
 
-The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
+### Cloudflare Pages
 
-```shell
-npm run build # or `yarn build`
-```
+This project is optimized for Cloudflare Pages deployment:
 
-## Cloudflare Pages
+1. **Local preview with Wrangler**
+   ```bash
+   npm run serve
+   ```
+   Then visit [http://localhost:8787/](http://localhost:8787/)
 
-Cloudflare's [wrangler](https://github.com/cloudflare/wrangler) CLI can be used to preview a production build locally. To start a local server, run:
+2. **Deploy to Cloudflare Pages**
+   ```bash
+   npm run deploy
+   ```
 
-```
-npm run serve
-```
+### Deployment Configuration
 
-Then visit [http://localhost:8787/](http://localhost:8787/)
+- **Build command**: `npm run build`
+- **Build output directory**: `dist`
+- **Node.js version**: 18.x or 20.x
 
-### Deployments
-
-[Cloudflare Pages](https://pages.cloudflare.com/) are deployable through their [Git provider integrations](https://developers.cloudflare.com/pages/platform/git-integration/).
-
-If you don't already have an account, then [create a Cloudflare account here](https://dash.cloudflare.com/sign-up/pages). Next go to your dashboard and follow the [Cloudflare Pages deployment guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/).
-
-Within the projects "Settings" for "Build and deployments", the "Build command" should be `npm run build`, and the "Build output directory" should be set to `dist`.
+For detailed setup, follow the [Cloudflare Pages deployment guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/).
 
 ### Function Invocation Routes
 

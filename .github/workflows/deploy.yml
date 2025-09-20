@@ -35,6 +35,11 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Setup Cloudflare Pages structure
+        run: |
+          mkdir -p dist/server
+          cp server/entry.cloudflare-pages.js dist/server/
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:

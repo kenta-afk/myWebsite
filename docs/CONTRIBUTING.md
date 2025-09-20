@@ -3,10 +3,12 @@
 ## Development Setup
 
 ### Prerequisites
+
 - Node.js 18.17.0+ or 20.3.0+
 - npm or yarn or pnpm
 
 ### Installation
+
 ```bash
 # Clone the repository
 git clone <repository-url>
@@ -25,6 +27,7 @@ npm run dev
 ## Project Architecture
 
 ### Folder Structure
+
 ```
 src/
 ├── components/          # Reusable UI components
@@ -50,41 +53,43 @@ src/
 ## Code Standards
 
 ### TypeScript
+
 - Use strict mode
 - Define interfaces for all data structures
 - Prefer `type` over `interface` for simple types
 - Use generic types where appropriate
 
 ### Components
+
 ```tsx
 // ✅ Good
 export interface ButtonProps {
-  variant?: 'primary' | 'secondary';
-  size?: 'sm' | 'md' | 'lg';
+  variant?: "primary" | "secondary";
+  size?: "sm" | "md" | "lg";
   class?: string;
   onClick$?: PropFunction<() => void>;
 }
 
-export const Button = component$<ButtonProps>(({ 
-  variant = 'primary', 
-  size = 'md',
-  ...props 
-}) => {
-  return (
-    <button class={getButtonClasses(variant, size)} {...props}>
-      <Slot />
-    </button>
-  );
-});
+export const Button = component$<ButtonProps>(
+  ({ variant = "primary", size = "md", ...props }) => {
+    return (
+      <button class={getButtonClasses(variant, size)} {...props}>
+        <Slot />
+      </button>
+    );
+  },
+);
 ```
 
 ### Styling
+
 - Use Tailwind CSS classes
 - Create reusable CSS classes for complex styles
 - Follow mobile-first responsive design
 - Use CSS custom properties for theming
 
 ### State Management
+
 - Use `useSignal` for simple state
 - Use `useStore` for complex objects
 - Implement custom hooks for shared logic
@@ -93,30 +98,32 @@ export const Button = component$<ButtonProps>(({
 ## Testing Guidelines
 
 ### Unit Tests
+
 ```tsx
 // components/__tests__/button.test.tsx
-import { render, screen } from '@testing-library/qwik';
-import { Button } from '../button';
+import { render, screen } from "@testing-library/qwik";
+import { Button } from "../button";
 
-describe('Button Component', () => {
-  it('renders with correct variant classes', async () => {
+describe("Button Component", () => {
+  it("renders with correct variant classes", async () => {
     await render(<Button variant="secondary">Click me</Button>);
-    const button = screen.getByRole('button');
-    expect(button).toHaveClass('bg-gray-700');
+    const button = screen.getByRole("button");
+    expect(button).toHaveClass("bg-gray-700");
   });
 });
 ```
 
 ### Service Tests
+
 ```ts
 // services/__tests__/validation.test.ts
-import { ValidationService } from '../validation';
+import { ValidationService } from "../validation";
 
-describe('ValidationService', () => {
-  describe('validateEmail', () => {
-    it('validates correct email format', () => {
-      expect(ValidationService.validateEmail('test@example.com')).toBe(true);
-      expect(ValidationService.validateEmail('invalid-email')).toBe(false);
+describe("ValidationService", () => {
+  describe("validateEmail", () => {
+    it("validates correct email format", () => {
+      expect(ValidationService.validateEmail("test@example.com")).toBe(true);
+      expect(ValidationService.validateEmail("invalid-email")).toBe(false);
     });
   });
 });
@@ -125,16 +132,19 @@ describe('ValidationService', () => {
 ## Performance Guidelines
 
 ### Code Splitting
+
 - Use lazy loading for heavy components
 - Implement route-based code splitting
 - Split vendor libraries when beneficial
 
 ### Bundle Optimization
+
 - Tree shake unused code
 - Optimize images and assets
 - Use appropriate compression
 
 ### Runtime Performance
+
 - Minimize re-renders
 - Use `useSignal` appropriately
 - Implement proper error boundaries
@@ -142,11 +152,13 @@ describe('ValidationService', () => {
 ## Git Workflow
 
 ### Branch Naming
+
 - `feature/component-name`
 - `bugfix/issue-description`
 - `hotfix/critical-fix`
 
 ### Commit Messages
+
 ```
 type(scope): description
 
@@ -158,6 +170,7 @@ type(scope): description
 Types: feat, fix, docs, style, refactor, test, chore
 
 ### Pull Request Process
+
 1. Create feature branch from `develop`
 2. Implement changes with tests
 3. Run linting and type checking
@@ -168,12 +181,15 @@ Types: feat, fix, docs, style, refactor, test, chore
 ## Release Process
 
 ### Versioning
+
 Follow Semantic Versioning (SemVer):
+
 - MAJOR: Breaking changes
 - MINOR: New features
 - PATCH: Bug fixes
 
 ### Deployment
+
 1. Merge to `main` branch
 2. Tag release version
 3. Build production bundle

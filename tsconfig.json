@@ -32,17 +32,12 @@
   },
   "files": ["./.eslintrc.cjs"],
   "include": [
-    "src", 
-    "./*.d.ts", 
+    "src",
+    "./*.d.ts",
     "./*.config.ts",
     "src/**/__tests__/**/*",
     "src/**/*.test.*",
     "e2e/**/*"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    ".cache"
-  ]
+  "exclude": ["node_modules", "dist", "build", ".cache"]
 }

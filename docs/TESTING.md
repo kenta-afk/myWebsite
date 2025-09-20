@@ -7,15 +7,18 @@ This document outlines the testing strategy and setup for the Qwik portfolio pro
 ## Testing Stack
 
 ### Unit Testing
+
 - **Framework**: Vitest
 - **Utilities**: @testing-library/qwik
 - **Coverage**: c8
 
-### E2E Testing  
+### E2E Testing
+
 - **Framework**: Playwright
 - **Browser Support**: Chromium, Firefox, Safari
 
 ### Component Testing
+
 - **Framework**: @testing-library/qwik
 - **Utilities**: @testing-library/jest-dom
 
@@ -55,6 +58,7 @@ src/
 ## Running Tests
 
 ### Development
+
 ```bash
 # Run all tests
 npm run test
@@ -73,6 +77,7 @@ npm run test button.test.tsx
 ```
 
 ### CI/CD
+
 ```bash
 # Production test suite
 npm run test:ci
@@ -84,18 +89,21 @@ npm run test:e2e:ci
 ## Test Guidelines
 
 ### Unit Tests
+
 - Test component props and behavior
 - Mock external dependencies
 - Focus on pure functions first
 - Aim for 80%+ coverage
 
-### Integration Tests  
+### Integration Tests
+
 - Test component interactions
 - Verify data flow
 - Test form submissions
 - Check navigation behavior
 
 ### E2E Tests
+
 - Critical user paths
 - Cross-browser compatibility
 - Responsive behavior

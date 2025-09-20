@@ -11,12 +11,16 @@ export default component$(() => {
   usePageEffects();
 
   return (
-    <div class="text-slate-100 min-h-screen" 
-         style={{
-           "font-family": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
-           "background": "linear-gradient(135deg, #000000 0%, #0d0d0d 30%, #080808 70%, #000000 100%)",
-           "min-height": "100vh"
-         }}>
+    <div
+      class="text-slate-100 min-h-screen"
+      style={{
+        "font-family":
+          "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+        background:
+          "linear-gradient(135deg, #000000 0%, #0d0d0d 30%, #080808 70%, #000000 100%)",
+        "min-height": "100vh",
+      }}
+    >
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
@@ -34,7 +38,8 @@ export const head: DocumentHead = {
     },
     {
       name: "keywords",
-      content: "Kenta-afk, portfolio, web developer, full-stack, React, Qwik, TypeScript",
+      content:
+        "Kenta-afk, portfolio, web developer, full-stack, React, Qwik, TypeScript",
     },
     {
       name: "viewport",
@@ -49,7 +54,7 @@ export const head: DocumentHead = {
       content: APP_CONFIG.site.name,
     },
     {
-      property: "og:description", 
+      property: "og:description",
       content: APP_CONFIG.site.description,
     },
     {

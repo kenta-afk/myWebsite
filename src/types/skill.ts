@@ -1,7 +1,7 @@
 export interface Skill {
   name: string;
-  category: 'frontend' | 'backend' | 'database' | 'mobile' | 'other';
-  level?: 'beginner' | 'intermediate' | 'advanced';
+  category: "frontend" | "backend" | "database" | "mobile" | "other";
+  level?: "beginner" | "intermediate" | "advanced";
 }
 
 export interface SkillCategory {

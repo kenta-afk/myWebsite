@@ -10,13 +10,13 @@ export const usePageEffects = () => {
     isLoaded.value = true;
 
     // Setup smooth scrolling for anchor links
-    document.addEventListener('click', handleAnchorClick);
+    document.addEventListener("click", handleAnchorClick);
 
     // Setup intersection observer for animations
     const observer = setupIntersectionObserver();
 
     return () => {
-      document.removeEventListener('click', handleAnchorClick);
+      document.removeEventListener("click", handleAnchorClick);
       observer.disconnect();
     };
   });

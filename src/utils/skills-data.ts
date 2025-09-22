@@ -22,4 +22,11 @@ export const skillCategories: SkillCategory[] = [
     iconColor: "text-zinc-300",
     skills: ["PostgreSQL", "MySQL", "Redis", "DynamoDB"],
   },
+  {
+    title: "Infrastructure",
+    icon: "M12 6V4m0 2a2 2 0 110 4m0-4a2 2 0 100 4m0-4v14m0 0v2m0-2a2 2 0 110 4m0-4a2 2 0 100 4m0-4H8m4 0h4",
+    bgColor: "bg-amber-700",
+    iconColor: "text-amber-300",
+    skills: ["AWS", "Docker", "GitHub Actions"],
+  },
 ];

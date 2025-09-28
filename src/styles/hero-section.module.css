@@ -1,0 +1,152 @@
+/* Hero Section Styles */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+  padding: 4rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.profileContainer {
+  width: 12rem;
+  height: 12rem;
+  background: linear-gradient(to bottom right, #9ca3af, #cbd5e1, #6b7280);
+  border-radius: 50%;
+  margin: 0 auto 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.profileImage {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.title {
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 200;
+  color: #f3f4f6;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.nameHighlight {
+  background: linear-gradient(90deg, #9ca3af, #94a3b8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.subtitle {
+  font-size: 1.875rem;
+  color: #d1d5db;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.button {
+  background: linear-gradient(to right, #4b5563, #64748b);
+  color: white;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background: linear-gradient(to right, #374151, #475569);
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.button:focus {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem;
+  }
+
+  .profileContainer {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2rem;
+  }
+
+  .profileImage {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .button {
+    padding: 0.875rem 2rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .profileContainer {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .profileImage {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+}

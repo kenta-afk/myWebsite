@@ -21,43 +21,43 @@
   gap: 2.5rem;
 }
 
-.projectsGrid.sm1 {
+.projectsGridSm1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.sm2 {
+.projectsGridSm2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.md1 {
+.projectsGridMd1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.md2 {
+.projectsGridMd2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.lg1 {
+.projectsGridLg1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.lg2 {
+.projectsGridLg2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.xl1 {
+.projectsGridXl1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.xl2 {
+.projectsGridXl2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.xl3 {
+.projectsGridXl3 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.projectsGrid.xl4 {
+.projectsGridXl4 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
@@ -69,11 +69,11 @@
 
 /* Responsive Grid */
 @media (min-width: 640px) {
-  .projectsGrid.sm1 {
+  .projectsGridSm1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .projectsGrid.sm2 {
+  .projectsGridSm2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -83,43 +83,43 @@
     font-size: 3.5rem;
   }
 
-  .projectsGrid.md1 {
+  .projectsGridMd1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .projectsGrid.md2 {
+  .projectsGridMd2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  .projectsGrid.lg1 {
+  .projectsGridLg1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .projectsGrid.lg2 {
+  .projectsGridLg2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .projectsGrid.lg3 {
+  .projectsGridLg3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1280px) {
-  .projectsGrid.xl1 {
+  .projectsGridXl1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .projectsGrid.xl2 {
+  .projectsGridXl2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .projectsGrid.xl3 {
+  .projectsGridXl3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .projectsGrid.xl4 {
+  .projectsGridXl4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

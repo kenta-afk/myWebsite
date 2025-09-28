@@ -4,14 +4,8 @@ import { Container } from "~/components/ui/container";
 import { SkillCategoryCard } from "~/components/skill-category-card";
 import { skillCategories } from "~/utils/skills-data";
 import type { SkillCategory } from "~/types/skill";
+import type { GridConfiguration } from "~/types/grid";
 import styles from "~/styles/skills-section.module.css";
-
-interface GridConfiguration {
-  readonly sm?: number;
-  readonly md?: number;
-  readonly lg?: number;
-  readonly xl?: number;
-}
 
 interface SkillsSectionProps {
   readonly title?: string;
@@ -38,10 +32,10 @@ export const SkillsSection = component$<SkillsSectionProps>(({
 
   const gridClasses = useComputed$(() => {
     const classes = [styles.skillsGrid];
-    if (gridCols.sm) classes.push(`${styles.skillsGrid}.sm${gridCols.sm}`);
-    if (gridCols.md) classes.push(`${styles.skillsGrid}.md${gridCols.md}`);
-    if (gridCols.lg) classes.push(`${styles.skillsGrid}.lg${gridCols.lg}`);
-    if (gridCols.xl) classes.push(`${styles.skillsGrid}.xl${gridCols.xl}`);
+    if (gridCols.sm) classes.push(styles[`skillsGridSm${gridCols.sm}`]);
+    if (gridCols.md) classes.push(styles[`skillsGridMd${gridCols.md}`]);
+    if (gridCols.lg) classes.push(styles[`skillsGridLg${gridCols.lg}`]);
+    if (gridCols.xl) classes.push(styles[`skillsGridXl${gridCols.xl}`]);
     return classes.join(" ");
   });
 

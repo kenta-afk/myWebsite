@@ -16,69 +16,70 @@ interface HeroSectionProps {
   readonly buttonClassName?: string;
 }
 
-export const HeroSection = component$<HeroSectionProps>(({
-  name = "Kenta",
-  nameHighlight = "-afk",
-  title = "Software Engineer",
-  buttonText = "View My Work",
-  profileImage = "/assets/kenta-afk.webp",
-  profileImageAlt = "Profile Avatar",
-  scrollTarget = "about",
-  className,
-  cardClassName,
-  buttonClassName,
-}) => {
-  const handleScrollToSection = $(() => smoothScrollTo(scrollTarget));
+export const HeroSection = component$<HeroSectionProps>(
+  ({
+    name = "Kenta",
+    nameHighlight = "-afk",
+    title = "Software Engineer",
+    buttonText = "View My Work",
+    profileImage = "/assets/kenta-afk.webp",
+    profileImageAlt = "Profile Avatar",
+    scrollTarget = "about",
+    className,
+    cardClassName,
+    buttonClassName,
+  }) => {
+    const handleScrollToSection = $(() => smoothScrollTo(scrollTarget));
 
-  const heroClasses = useComputed$(() =>
-    className ? `${styles.hero} hero-bg ${className}` : `${styles.hero} hero-bg`
-  );
+    const heroClasses = useComputed$(() =>
+      className
+        ? `${styles.hero} hero-bg ${className}`
+        : `${styles.hero} hero-bg`,
+    );
 
-  const cardClasses = useComputed$(() =>
-    cardClassName ? `${styles.card} ${cardClassName}` : styles.card
-  );
+    const cardClasses = useComputed$(() =>
+      cardClassName ? `${styles.card} ${cardClassName}` : styles.card,
+    );
 
-  const buttonClasses = useComputed$(() =>
-    buttonClassName ? `${styles.button} ${buttonClassName}` : styles.button
-  );
+    const buttonClasses = useComputed$(() =>
+      buttonClassName ? `${styles.button} ${buttonClassName}` : styles.button,
+    );
 
-  return (
-    <header class={heroClasses.value} role="banner">
-      <div class={styles.container}>
-        <Card variant="dark-glass" class={cardClasses.value}>
-          <div
-            class={styles.profileContainer}
-            role="img"
-            aria-label={profileImageAlt}
-          >
-            <img
-              src={profileImage}
-              alt={profileImageAlt}
-              class={styles.profileImage}
-              loading="eager"
-            />
-          </div>
-          <h1 class={styles.title}>
-            {name}
-            <span
-              class={styles.nameHighlight}
-              aria-label={nameHighlight}
+    return (
+      <header class={heroClasses.value} role="banner">
+        <div class={styles.container}>
+          <Card variant="dark-glass" class={cardClasses.value}>
+            <div
+              class={styles.profileContainer}
+              role="img"
+              aria-label={profileImageAlt}
             >
-              {nameHighlight}
-            </span>
-          </h1>
-          <p class={styles.subtitle} role="doc-subtitle">
-            {title}
-          </p>
-          <button
-            onClick$={handleScrollToSection}
-            class={buttonClasses.value}
-            aria-label={`${buttonText} - Navigate to ${scrollTarget} section`}
-          >
-            {buttonText}
-          </button>
-        </Card>
-      </div>
-    </header>
-  );
-});
+              <img
+                src={profileImage}
+                alt={profileImageAlt}
+                class={styles.profileImage}
+                loading="eager"
+              />
+            </div>
+            <h1 class={styles.title}>
+              {name}
+              <span class={styles.nameHighlight} aria-label={nameHighlight}>
+                {nameHighlight}
+              </span>
+            </h1>
+            <p class={styles.subtitle} role="doc-subtitle">
+              {title}
+            </p>
+            <button
+              onClick$={handleScrollToSection}
+              class={buttonClasses.value}
+              aria-label={`${buttonText} - Navigate to ${scrollTarget} section`}
+            >
+              {buttonText}
+            </button>
+          </Card>
+        </div>
+      </header>
+    );
+  },
+);

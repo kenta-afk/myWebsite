@@ -1,0 +1,148 @@
+/* Projects Section Styles */
+.section {
+  padding: 8rem 0;
+}
+
+.headerContainer {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.projectsGrid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.projectsGrid.sm1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.sm2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.md1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.md2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.lg1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.lg2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.xl1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.xl2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.xl3 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.projectsGrid.xl4 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.emptyState {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 1.25rem;
+}
+
+/* Responsive Grid */
+@media (min-width: 640px) {
+  .projectsGrid.sm1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .projectsGrid.sm2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .projectsGrid.md1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .projectsGrid.md2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectsGrid.lg1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .projectsGrid.lg2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .projectsGrid.lg3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .projectsGrid.xl1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .projectsGrid.xl2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .projectsGrid.xl3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .projectsGrid.xl4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .headerContainer {
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .projectsGrid {
+    gap: 1.5rem;
+  }
+
+  .emptyState {
+    font-size: 1rem;
+  }
+}

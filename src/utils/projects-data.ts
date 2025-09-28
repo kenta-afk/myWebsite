@@ -14,7 +14,7 @@ export const featuredProjects: Project[] = [
       "Go",
       "Docker",
     ],
-    gradient: "from-orange-600 to-red-800",
+    gradient: "from-blue-600 to-purple-800",
     icon: "⚡",
     category: "Mobile Game",
     url: "https://topaz.dev/projects/575f49eb3bc26cf370b1",

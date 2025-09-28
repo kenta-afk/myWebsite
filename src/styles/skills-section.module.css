@@ -1,0 +1,178 @@
+/* Skills Section Styles */
+.section {
+  padding: 8rem 0;
+}
+
+.card {
+  padding: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 4rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.skillsGrid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.skillsGrid.sm1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.sm2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.sm3 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.md1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.md2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.md3 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.lg1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.lg2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.lg3 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.xl1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.xl2 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.xl3 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.skillsGrid.xl4 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.emptyState {
+  text-align: center;
+  color: #9ca3af;
+}
+
+/* Responsive Grid */
+@media (min-width: 640px) {
+  .skillsGrid.sm1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .skillsGrid.sm2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skillsGrid.sm3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .skillsGrid.md1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .skillsGrid.md2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skillsGrid.md3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .skillsGrid.lg1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .skillsGrid.lg2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skillsGrid.lg3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .skillsGrid.xl1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .skillsGrid.xl2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .skillsGrid.xl3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .skillsGrid.xl4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .skillsGrid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skillsGrid {
+    gap: 1rem;
+  }
+}

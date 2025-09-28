@@ -62,7 +62,7 @@ export const featuredProjects: Project[] = [
     id: "virtual-marathon",
     title: "擬似マラソン",
     description:
-      "スマートフォンと、vrゴーグルを使用して腕を振って画面が切り替わるマラソンを再現",
+      "スマートフォンとVRゴーグルを組み合わせた革新的なマラソン体験アプリ。実際に腕を振る動作でバーチャル空間でのマラソンを楽しめる新感覚のVRゲーム。",
     technologies: ["Rust", "React", "Grpc", "AWS", "Kotlin", "Go"],
     gradient: "from-purple-600 to-pink-800",
     icon: "🏃‍♂️",

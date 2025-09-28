@@ -21,55 +21,55 @@
   gap: 2.5rem;
 }
 
-.skillsGrid.sm1 {
+.skillsGridSm1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.sm2 {
+.skillsGridSm2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.sm3 {
+.skillsGridSm3 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.md1 {
+.skillsGridMd1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.md2 {
+.skillsGridMd2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.md3 {
+.skillsGridMd3 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.lg1 {
+.skillsGridLg1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.lg2 {
+.skillsGridLg2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.lg3 {
+.skillsGridLg3 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.xl1 {
+.skillsGridXl1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.xl2 {
+.skillsGridXl2 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.xl3 {
+.skillsGridXl3 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.skillsGrid.xl4 {
+.skillsGridXl4 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
@@ -80,61 +80,61 @@
 
 /* Responsive Grid */
 @media (min-width: 640px) {
-  .skillsGrid.sm1 {
+  .skillsGridSm1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .skillsGrid.sm2 {
+  .skillsGridSm2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .skillsGrid.sm3 {
+  .skillsGridSm3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 768px) {
-  .skillsGrid.md1 {
+  .skillsGridMd1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .skillsGrid.md2 {
+  .skillsGridMd2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .skillsGrid.md3 {
+  .skillsGridMd3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1024px) {
-  .skillsGrid.lg1 {
+  .skillsGridLg1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .skillsGrid.lg2 {
+  .skillsGridLg2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .skillsGrid.lg3 {
+  .skillsGridLg3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (min-width: 1280px) {
-  .skillsGrid.xl1 {
+  .skillsGridXl1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
-  .skillsGrid.xl2 {
+  .skillsGridXl2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .skillsGrid.xl3 {
+  .skillsGridXl3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .skillsGrid.xl4 {
+  .skillsGridXl4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }

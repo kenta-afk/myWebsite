@@ -16,58 +16,63 @@ interface SkillsSectionProps {
   readonly emptyMessage?: string;
 }
 
-export const SkillsSection = component$<SkillsSectionProps>(({
-  title = "Skills",
-  categories = skillCategories,
-  sectionId = "skills",
-  className,
-  gridCols = { md: 2, lg: 3 },
-  emptyMessage = "No skills to display",
-}) => {
-  const memoizedCategories = useComputed$(() => categories);
+export const SkillsSection = component$<SkillsSectionProps>(
+  ({
+    title = "Skills",
+    categories = skillCategories,
+    sectionId = "skills",
+    className,
+    gridCols = { md: 2, lg: 3 },
+    emptyMessage = "No skills to display",
+  }) => {
+    const memoizedCategories = useComputed$(() => categories);
 
-  const sectionClasses = useComputed$(() =>
-    className ? `${styles.section} section-bg ${className}` : `${styles.section} section-bg`
-  );
+    const sectionClasses = useComputed$(() =>
+      className
+        ? `${styles.section} section-bg ${className}`
+        : `${styles.section} section-bg`,
+    );
 
-  const gridClasses = useComputed$(() => {
-    const classes = [styles.skillsGrid];
-    if (gridCols.sm) classes.push(styles[`skillsGridSm${gridCols.sm}`]);
-    if (gridCols.md) classes.push(styles[`skillsGridMd${gridCols.md}`]);
-    if (gridCols.lg) classes.push(styles[`skillsGridLg${gridCols.lg}`]);
-    if (gridCols.xl) classes.push(styles[`skillsGridXl${gridCols.xl}`]);
-    return classes.join(" ");
-  });
+    const gridClasses = useComputed$(() => {
+      const classes = [styles.skillsGrid];
+      if (gridCols.sm) classes.push(styles[`skillsGridSm${gridCols.sm}`]);
+      if (gridCols.md) classes.push(styles[`skillsGridMd${gridCols.md}`]);
+      if (gridCols.lg) classes.push(styles[`skillsGridLg${gridCols.lg}`]);
+      if (gridCols.xl) classes.push(styles[`skillsGridXl${gridCols.xl}`]);
+      return classes.join(" ");
+    });
 
-  return (
-    <section
-      id={sectionId}
-      class={sectionClasses.value}
-      aria-labelledby={`${sectionId}-heading`}
-    >
-      <Container>
-        <Card variant="glass" class={styles.card}>
-          <h2
-            id={`${sectionId}-heading`}
-            class={styles.title}
-          >
-            {title}
-          </h2>
-          {memoizedCategories.value && memoizedCategories.value.length > 0 ? (
-            <div class={gridClasses.value} role="list" aria-label="Skill categories">
-              {memoizedCategories.value.map((category) => (
-                <div key={category.title} role="listitem">
-                  <SkillCategoryCard category={category} />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <p class={styles.emptyState} role="status">
-              {emptyMessage}
-            </p>
-          )}
-        </Card>
-      </Container>
-    </section>
-  );
-});
+    return (
+      <section
+        id={sectionId}
+        class={sectionClasses.value}
+        aria-labelledby={`${sectionId}-heading`}
+      >
+        <Container>
+          <Card variant="glass" class={styles.card}>
+            <h2 id={`${sectionId}-heading`} class={styles.title}>
+              {title}
+            </h2>
+            {memoizedCategories.value && memoizedCategories.value.length > 0 ? (
+              <div
+                class={gridClasses.value}
+                role="list"
+                aria-label="Skill categories"
+              >
+                {memoizedCategories.value.map((category) => (
+                  <div key={category.title} role="listitem">
+                    <SkillCategoryCard category={category} />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <p class={styles.emptyState} role="status">
+                {emptyMessage}
+              </p>
+            )}
+          </Card>
+        </Container>
+      </section>
+    );
+  },
+);

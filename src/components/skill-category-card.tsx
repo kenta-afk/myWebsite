@@ -11,7 +11,7 @@ interface SkillCategoryCardProps {
 export const SkillCategoryCard = component$<SkillCategoryCardProps>(
   ({
     category,
-    className = "text-center p-8 rounded-2xl glass-effect hover:bg-gray-600 hover:bg-opacity-10 transition-all duration-300 group",
+    className = "text-center p-8 rounded-2xl glass-effect hover:bg-gray-600 hover:bg-opacity-10 transition-all duration-300 group h-full flex flex-col",
     iconSize = "w-10 h-10",
     titleLevel = "h3",
   }) => {
@@ -41,7 +41,7 @@ export const SkillCategoryCard = component$<SkillCategoryCardProps>(
           {category.title}
         </TitleTag>
         <div
-          class="space-y-3"
+          class="space-y-3 flex-grow"
           role="list"
           aria-label={`${category.title} skills`}
         >

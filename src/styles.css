@@ -53,6 +53,14 @@ body {
   display: flex;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
 .grid {
   display: grid;
 }
@@ -293,6 +301,10 @@ body {
 
 .h-48 {
   height: 12rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-w-5xl {
